@@ -1,1 +1,34 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import '~ng-zorro-antd/ng-zorro-antd.css';
+
+@font-face {
+    font-family: Sans-Neue;
+    src: url(assets/Sans-Neue-Font/SoinSansNeue-Light.otf)  format("opentype");
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Sans-Neue }
+
+
+*{
+    font-family: Sans-Neue;
+}
+
+.getStarted button{
+    background: linear-gradient(to right, #b01e31 50%, #FFDEEB 50%);
+    background-size: 200% 100%;
+    color:#b01e31;
+    background-position: right bottom;
+    transition: all .3s ease-out;
+}
+
+.getStarted button:hover {
+    color:#fff;
+    background: linear-gradient(to right, #b01e31 50%,  #FFDEEB  50%);
+    background-size: 200% 100%;
+    background-position: left bottom;
+    transition: all .3s ease-out;
+}
