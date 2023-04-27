@@ -70,9 +70,13 @@
 
 #ad-image{
     position:absolute;
-    right:-151px;
-    z-index: -1;
+    right:0;
+    // z-index: -1;
 }
+
+// #ad-image img{
+//     max-height: 40%;
+// }
 
 #ad-image{
     width:45%
