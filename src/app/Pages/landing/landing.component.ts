@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -8,7 +9,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LandingComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private router: Router
+  ) { }
 
   ngOnInit(): void {
   }
@@ -20,6 +23,10 @@ export class LandingComponent implements OnInit {
       top.scrollIntoView();
       top = null;
     }
+  }
+
+  sales(){
+    this.router.navigate(['contact-us'])
   }
 
 }
