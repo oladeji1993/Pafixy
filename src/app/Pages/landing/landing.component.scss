@@ -50,7 +50,11 @@
     background-image: url("/assets/images/headerImage.png");
     background-size:cover;
     transition: all 1s;
+}
 
+#service-card:hover{
+    border-radius: 6px;
+    border:1px solid #b01e31;
 }
 
 #banner-bg:hover {
@@ -122,7 +126,11 @@
     transition: all 1s;
 }
 
-#invoice-img img:hover{
+#invoice-img:hover{
+    opacity: .8;    
+}
+
+#invoice-img:hover img {
     transition: all .5s;
     transform: scale(1.5);
 }

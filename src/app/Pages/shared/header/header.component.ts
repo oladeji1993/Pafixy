@@ -10,6 +10,8 @@ export class HeaderComponent implements OnInit {
 
   menu:any
   menuShow = false;
+  sideBarOpen: boolean = false;
+
   toggleNavbar(){
     this.menuShow = !this.menuShow;
   }
@@ -40,5 +42,14 @@ export class HeaderComponent implements OnInit {
   // addHover(){
   //   document.getElementsByClassName('innerMenu')[0].classList.add('add-hover');
   // }
+  toggleSideBar(){
+    document.getElementsByClassName('sidebar')[0].classList.add('showsidebar');
+    this.sideBarOpen = true;
+  }
+
+  removeSideBar(){
+    document.getElementsByClassName('sidebar')[0].classList.remove('showsidebar');
+    this.sideBarOpen = false;
+  }
 
 }

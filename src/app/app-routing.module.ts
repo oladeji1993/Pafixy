@@ -18,34 +18,50 @@ const routes: Routes = [
   {
     path: 'home',
     component: LandingComponent,
+    title: 'Home | Payfixy',
+    data: {
+      description:'Payfixy is a fintech company that offers innovative and secure payment solutions. With our user-friendly platform, you can easily send and receive payments from anywhere in the world. Join Payfixy today and experience hassle-free financial transactions'
+    } 
   },
   {
     path: 'transact',
-    component: TranXactComponent
+    component: TranXactComponent,
+    title: "TranXact | Payfixy"
+
   },
   {
     path: 'payment',
-    component: PaymentComponent
+    component: PaymentComponent,
+    title: "Payment Gateway | Payfixy"
   },
   {
     path: 'payX',
-    component: PayXComponent
+    component: PayXComponent,
+    title: "PayX | Payfixy"
   },
   {
     path: 'contact-us',
-    component: ContactUsComponent
+    component: ContactUsComponent,
+    title: "Contact | Payfixy"
+
   },
   {
     path: 'about-us',
-    component: AboutUsComponent
+    component: AboutUsComponent,
+    title: "About Us | Payfixy"
+
   },
   {
     path: 'developer',
-    component: DeveloperComponent
+    component: DeveloperComponent,
+    title: "Developer | Payfixy"
+
   },
   {
     path: 'pricing',
-    component: PricingComponent
+    component: PricingComponent,
+    title: "Developer | Payfixy"
+
   },
 
 

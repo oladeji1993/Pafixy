@@ -8,13 +8,16 @@
                 </div>
                 <!-- menu items -->
                 <div class="hidden mt-2 space-x-6 md:flex">
-                    <a class="group menuDropDown relative hover:text-black cursor-pointer">
+                    <a class="group menuDropDown product-menu relative hover:text-black cursor-pointer">
                         <div class="flex">
                             <span class="mr-2">
                                 Product
                             </span>
-                            <span class="mt-1">
+                            <span id="arrowDown" class="mt-1">
                                 <img src="assets/images/dropDown.png" width="60%" alt="">
+                            </span>
+                            <span id="arrowUp" class="mt-1">
+                                <img src="assets/images/arrow-up.png" width="60%" alt="">
                             </span>
                         </div>
                         <div id="menu1" class="group-hover:block dropdown-menu absolute hidden h-auto">
@@ -27,13 +30,16 @@
                     </a>
                     <a routerLink="developer" class="text-darkGrayishBlue hover:text-black">Developer</a>
                     <a routerLink="pricing" class="text-darkGrayishBlue hover:text-black">Pricing</a>
-                    <a  class="group menuDropDown relative hover:text-black cursor-pointer">
+                    <a  class="group menuDropDown pafixy-menu relative hover:text-black cursor-pointer">
                         <div class="flex">
                             <span class="mr-2">
                                 Pafixy
                             </span>
-                            <span class="mt-1">
+                            <span id="menuArrowDown" class="mt-1">
                                 <img src="assets/images/dropDown.png" width="60%" alt="">
+                            </span>
+                            <span id="menuArrowUp" class="mt-1">
+                                <img src="assets/images/arrow-up.png" width="60%" alt="">
                             </span>
                         </div>
                         <div id="menu2" class="group-hover:block dropdown-menu absolute hidden h-auto">
@@ -49,18 +55,45 @@
                     Get Started
                 </button>
         
-                <button id="menu-btn" class="block hamburger focus:outline-none md:hidden">
+                <button  (click)="toggleSideBar()" id="menu-btn" class="block hamburger focus:outline-none md:hidden">
                     <img src="assets/images/hamburger.png" alt="">
                 </button>
             </div>
+
+
             <!-- mobile menu -->
-            <div class="md:hidden">
-                <div id="menu"
-                    class="absolute flex-col items-center hidden self-end  py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
-                    <a href="">About US</a>
-                    <a href="">Community</a>
-                    <a href="">About Us</a>
-                    <a href="">Terms</a>
+            <div class="sidebar">
+                <div class="flex justify-between p-6">
+                    <div>
+                        <img src="assets/images/logo_White.png" alt="">
+                    </div>
+                    <div>
+                        <img (click)="removeSideBar()" src="assets/images/cancel.png" alt="">
+                    </div>
+                </div>
+                <hr class="line">
+
+                <div class="menu-items mt-5 px-6">
+                    <div>
+                        <div class="text-white font-extrabold text-[20px] cursor-pointer">Product</div>
+                        <div (click)="removeSideBar()" routerLink="payX" class="text-white text-[18px] mt-2 cursor-pointer">PayX</div>
+                        <div (click)="removeSideBar()" routerLink="transact" class="text-white text-[18px] mt-2 cursor-pointer">TranXact</div>
+                        <div (click)="removeSideBar()" routerLink="payment" class="text-white text-[18px] mt-2 cursor-pointer">Payment Gateway</div>
+                    </div>
+                </div>
+                <!-- <hr class="line"> -->
+                <div class="p-2 border-t px-6 mt-5">
+                    <div (click)="removeSideBar()" routerLink="developer" class="text-white font-extrabold text-[20px] cursor-pointer">Developer</div>
+                </div>
+                <hr class="line">
+                <div class="p-2 px-6">
+                    <div (click)="removeSideBar()" routerLink="pricing" class="text-white font-extrabold text-[20px] cursor-pointer">Pricing</div>
+                </div>
+                <hr class="line">
+                <div class="px-6 mt-5">
+                    <div class="text-white font-extrabold text-[20px] cursor-pointer">Pafixy</div>
+                    <div (click)="removeSideBar()" routerLink="about-us" class="text-white text-[18px] mt-2 cursor-pointer">About Pafixy</div>
+                    <div (click)="removeSideBar()" routerLink="contact-us" class="text-white text-[18px] mt-2 cursor-pointer">Contact Us</div>
                 </div>
             </div>
         </nav>

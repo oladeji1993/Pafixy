@@ -19,6 +19,16 @@
     text-align: center !important;
 }
 
+#about-us img {
+    transition: all 1s;
+
+}
+
+#about-us img:hover {
+    transition: all .5s;
+    transform: scale(1.1);
+}
+
 
 // .developer{
 //     background-image: url("/assets/images/dev.png");
