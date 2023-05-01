@@ -1,8 +1,30 @@
-.body {
-    overflow-y: scroll;
-    height: calc(100vh - 71px);
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+// .body {
+//     overflow-y: scroll;
+//     height: calc(100vh - 71px);
+//     -ms-overflow-style: none;
+//     scrollbar-width: none;
+// }
+
+.fixed{
+    position: fixed;
+    width:100%;
+    transition: 0.2s linear;
+    top:0px;
+    z-index: 1;
+}
+
+.nofixed{
+    position: static;
+    transition: 0.2s linear;
+    top: -50px
+}
+
+.shadow{
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.remove-shadow{
+    box-shadow: 0 0 #0000;
 }
 
 ::-webkit-scrollbar {

@@ -1,5 +1,5 @@
-<div class="flex flex-wrap">
-    <div class="w-full shadow">
+<div class="flex flex-wrap bg-white">
+    <div class="w-full">
         <nav class="px-6 relative mx-auto container p-3 md:px-0">
             <div class="flex item-center justify-between py-2">
                 <!-- logo-->
@@ -76,9 +76,9 @@
                 <div class="menu-items mt-5 px-6">
                     <div>
                         <div class="text-white font-extrabold text-[20px] cursor-pointer">Product</div>
+                        <div (click)="removeSideBar()" routerLink="payment" class="text-white text-[18px] mt-2 cursor-pointer">Payment Gateway</div>
                         <div (click)="removeSideBar()" routerLink="payX" class="text-white text-[18px] mt-2 cursor-pointer">PayX</div>
                         <div (click)="removeSideBar()" routerLink="transact" class="text-white text-[18px] mt-2 cursor-pointer">TranXact</div>
-                        <div (click)="removeSideBar()" routerLink="payment" class="text-white text-[18px] mt-2 cursor-pointer">Payment Gateway</div>
                     </div>
                 </div>
                 <!-- <hr class="line"> -->

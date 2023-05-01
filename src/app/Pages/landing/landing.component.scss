@@ -46,7 +46,7 @@
     transition: all .3s ease-out;
 }
 
-#banner-bg {
+.banner-bg {
     background-image: url("/assets/images/headerImage.png");
     background-size:cover;
     transition: all 1s;
@@ -57,7 +57,12 @@
     border:1px solid #b01e31;
 }
 
-#banner-bg:hover {
+#step-card:hover{
+    border-radius: 6px;
+    border:1px solid #b01e31;
+}
+
+.banner-bg:hover {
     background-image: url("/assets/images/headerImage2.png");
     background-size:cover;
     background-position: right;

@@ -1,7 +1,4 @@
-import { Component } from '@angular/core';
-import { Router, Scroll } from '@angular/router';
-import { ViewportScroller } from '@angular/common';
-import { delay, filter } from 'rxjs/operators';
+import { Component, HostListener } from '@angular/core';
 
 
 @Component({
@@ -9,22 +6,18 @@ import { delay, filter } from 'rxjs/operators';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
-  constructor(router: Router, viewportScroller: ViewportScroller) {
-    router.events
-      .pipe(filter((e): e is Scroll => e instanceof Scroll))
-      .pipe(delay(1))   // <--------------------------- This line
-      .subscribe((e) => {
-        if (e.position) {
-          // backward navigation
-          viewportScroller.scrollToPosition(e.position);
-        } else if (e.anchor) {
-          // anchor navigation
-          viewportScroller.scrollToAnchor(e.anchor);
-        } else {
-          // forward navigation
-          viewportScroller.scrollToPosition([0, 0]);
-        }
-      });
-  }
+export class AppComponent  {
+  navbarFixed: boolean = false
+  title = 'Pafixy | Home';
+
+  @HostListener('window:scroll', ['$event']) onScroll(){
+    if(window.scrollY > 0){
+      this.navbarFixed = true
+      document.getElementsByClassName('header')[0].classList.add('shadow');
+    }else{
+      this.navbarFixed = false
+      document.getElementsByClassName('header')[0].classList.add('remove-shadow');
+
+    }
+  } 
 }

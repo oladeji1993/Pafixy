@@ -12,13 +12,4 @@ export class TranXactComponent implements OnInit {
   ngOnInit(): void {
   }
 
-
-  ngAfterViewInit() {
-    let top = document.getElementById('top');
-    if (top !== null) {
-      top.scrollIntoView();
-      top = null;
-    }
-  }
-
 }

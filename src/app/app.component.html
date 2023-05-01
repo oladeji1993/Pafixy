@@ -1,5 +1,7 @@
-<app-header></app-header>
-<div class="body">
+<div class="header" (scroll)="onScroll()" [ngClass]="navbarFixed ? 'fixed' : 'nofixed'">
+  <app-header></app-header>
+</div>
+<div>
   <router-outlet></router-outlet>
   <app-footer></app-footer>
 </div>
