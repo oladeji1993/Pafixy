@@ -77,7 +77,9 @@
                     <div>
                         <div class="text-white font-extrabold text-[20px] cursor-pointer">Product</div>
                         <div (click)="removeSideBar()" routerLink="payment" class="text-white text-[18px] mt-2 cursor-pointer">Payment Gateway</div>
-                        <div (click)="removeSideBar()" routerLink="payX" class="text-white text-[18px] mt-2 cursor-pointer">PayX</div>
+                        <div (click)="removeSideBar()" class="text-white text-[18px] mt-2 cursor-pointer">                                
+                            <a [routerLink]="['payX']" fragment="payXsection" class="block text-base text-sm p-1 cursor-pointer">PayX</a>
+                        </div>
                         <div (click)="removeSideBar()" routerLink="transact" class="text-white text-[18px] mt-2 cursor-pointer">TranXact</div>
                     </div>
                 </div>
