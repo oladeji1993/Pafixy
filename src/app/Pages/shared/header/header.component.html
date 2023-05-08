@@ -23,7 +23,7 @@
                         <div id="menu1" class="group-hover:block dropdown-menu absolute hidden h-auto">
                             <ul class="top-0 w-48 bg-white shadow px-4 py-6">
                                 <li routerLink="payment" class="py-1 dropMenu"><div class="block text-base text-sm p-1 cursor-pointer">Payment Gateway</div></li>
-                                <li routerLink="payX" class="py-1 dropMenu"><a class="block text-base text-sm p-1 cursor-pointer">PayX</a></li>
+                                <li class="py-1 dropMenu"><a [routerLink]="['payX']" fragment="payXsection" class="block text-base text-sm p-1 cursor-pointer">PayX</a></li>
                                 <li routerLink="transact" class="py-1 dropMenu"><a class="block text-base text-sm p-1 cursor-pointer">TraXact</a></li>
                             </ul>
                         </div>
