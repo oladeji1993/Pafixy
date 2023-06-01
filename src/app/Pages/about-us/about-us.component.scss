@@ -1,0 +1,69 @@
+#image{
+    position:absolute;
+    right:-151px;
+    z-index: -1;
+}
+
+.bg-img{
+    position: absolute;
+    top:0;
+}
+
+.bg-img img{
+    float: right;
+}
+
+.values img{
+    // display: flex;
+    // justify-content: center;
+    text-align: center !important;
+}
+
+#about-us img {
+    transition: all 1s;
+
+}
+
+#about-us img:hover {
+    transition: all .5s;
+    transform: scale(1.1);
+}
+
+
+.team img{
+    width:85%;
+    height: auto;
+}
+
+.small-img{
+    width: 100%;
+}
+
+.small-img img{
+    width:75%;
+    height: auto;
+}
+
+.s-small-img img{
+    width:70%;
+    height: auto;
+}
+
+
+// .developer{
+//     background-image: url("/assets/images/dev.png");
+//     background-size: cover;
+//     width: auto;
+// }
+
+#about-image{
+    position:absolute;
+    right:-151px;
+    z-index: -1;
+}
+
+
+// .api{
+//     z-index: -20;
+
+// }

@@ -1,0 +1,152 @@
+#hero{
+    margin: 0px 100px;
+}
+
+.transact{
+    box-shadow: 0 40px 15px -12px rgba(168, 168, 168, 0.25);
+}
+
+.contact-us{
+    background-image: url("/assets/images/background.png");
+}
+
+#image{
+    position:absolute;
+    top:0
+    // z-index: -20;
+    // right: -400px;
+}
+
+#image img{
+    float:right
+}
+
+.bg-img{
+    position: absolute;
+    top:0;
+}
+
+.bg-img img{
+    float: right;
+}
+
+.getStarted button{
+    background: linear-gradient(to right, #b01e31 50%, #FFDEEB 50%);
+    background-size: 200% 100%;
+    color:#b01e31;
+    background-position: right bottom;
+    transition: all .3s ease-out;
+}
+
+.getStarted button:hover {
+    color:#fff;
+    background: linear-gradient(to right, #b01e31 50%,  #FFDEEB  50%);
+    background-size: 200% 100%;
+    background-position: left bottom;
+    transition: all .3s ease-out;
+}
+
+.banner-bg {
+    background-image: url("/assets/images/headerImage.png");
+    background-size:cover;
+    transition: all 1s;
+}
+
+#service-card:hover{
+    border-radius: 6px;
+    border:1px solid #b01e31;
+}
+
+#step-card:hover{
+    border-radius: 6px;
+    border:1px solid #b01e31;
+}
+
+.banner-bg:hover {
+    background-image: url("/assets/images/headerImage2.png");
+    background-size:cover;
+    background-position: right;
+    transition: all 1s;
+}
+
+#card-bg{
+    background: #564355 0% 0% no-repeat padding-box;
+    border-radius: 10px 180px 10px 10px;
+    opacity: 1;
+    backdrop-filter: blur(49px);
+    -webkit-backdrop-filter: blur(49px);
+}
+
+#ad-image{
+    position:absolute;
+    right:0;
+    // z-index: -1;
+}
+
+// #ad-image img{
+//     max-height: 40%;
+// }
+
+#ad-image{
+    width:45%
+}
+
+
+.credit-card img{
+    transition: all 1s;
+}
+
+.credit-card img:hover{
+    transition: all .5s;
+    transform : translateY(-20px);
+    // box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25)
+    box-shadow: 0px 25px 15px -20px #f6df8e;
+}
+
+.debit-card img{
+    background-color: none;
+    transition: all 1s;
+}
+
+.debit-card img:hover{
+    transition: all .5s;
+    transform : translateY(-20px);
+    // box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25)
+    box-shadow: 0px 25px 15px -20px #738ff5;
+}
+
+.cash img{
+    background-color: none;
+    transition: all 1s;
+}
+
+.cash img:hover{
+    transition: all .5s;
+    transform : translateY(-20px);
+    // box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25)
+    box-shadow: 0px 25px 15px -20px #67fe9a;
+}
+
+#invoice-img img{
+    transition: all 1s;
+}
+
+#invoice-img:hover{
+    opacity: .8;    
+}
+
+#invoice-img:hover img {
+    transition: all .5s;
+    transform: scale(1.5);
+}
+
+// #logos {
+//     height: 100px;
+//     width: 900px;
+//     overflow: scroll;
+//     overflow-y: scroll;
+// }
+
+// #card_payments{
+//     justify-content: space-evenly;
+// }

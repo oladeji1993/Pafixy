@@ -1,0 +1,74 @@
+.dropMenu:hover {
+    background: #FFF0F6;
+}
+
+.menuDropDown{
+    z-index: 1
+}
+
+.sidebar {
+    background: #B11E31;
+    height: 100%;
+    width: 0;
+    position: fixed; 
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    /* padding-top: 60px; */
+    transition: 0.3s; 
+   }
+   .showsidebar {
+    width: 100%;
+    box-shadow:0 0 0 10000px rgba(0,0,0,.50);
+   }
+   .hidesidebar {
+    width: 0px;
+   }
+
+hr .line{
+    background-color: #fdfdfd !important;
+}
+
+#arrowUp{
+    display:none
+}
+
+#menuArrowUp{
+    display: none;
+}
+
+.product-menu:hover #arrowUp{
+    display: block;
+}
+
+.product-menu:hover #menu1{
+    display: block;
+}
+
+.product-menu:hover #arrowDown{
+    display: none;
+}
+
+
+.product-menu:hover #arrowDown{
+    display: none;
+}
+
+
+.pafixy-menu:hover #menuArrowUp{
+    display: block;
+}
+
+.pafixy-menu:hover #menu2{
+    display: block;
+}
+
+.pafixy-menu:hover #menuArrowDown{
+    display: none;
+}
+
+
+.pafixy-menu:hover #menuArrowDown{
+    display: none;
+}

@@ -1,0 +1,25 @@
+#image{
+    position:absolute;
+    left:-151px;
+    z-index: -20;
+}
+
+.donation{
+    background-image: url("/assets/images/pay_bg.png");
+    height: 40em;
+    background-size: cover;
+    width: auto;
+}
+
+
+.api{
+    z-index: -20;
+
+}
+
+
+#step-1{
+    position: absolute;
+    top:0;
+    left:10px
+}
