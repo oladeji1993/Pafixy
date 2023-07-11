@@ -1,228 +1,322 @@
 <div class="pb-10 bg-[#404041]">
-    <div class="container pt-12 mx-auto">
-        <div class="grid md:gap-16 row-gap-10 mb-8 lg:grid-cols-5">
-            <div class="flex justify-center border-b md:border-none pb-5 md:block md:max-w-md lg:col-span-2">
-                <div class="block md:hidden">
-                    <a href="/" aria-label="Go home" title="Company" class="inline-flex items-center">
-                        <img src="assets/images/footer-logo.svg" alt="">
-                    </a>
-                    <div class="flex items-center text-center text-white mt-5">
-                        <div>Easy payment solutions for you<br> and your customers</div>
-                    </div>
-                    <div class="flex justify-center mt-2 text-center">
-                        <div class="mr-1"><img src="assets/images/social-1.svg" alt=""></div>
-                        <div class="mr-1"><img src="assets/images/social-2.svg" alt=""></div>
-                        <div class="mr-1"><img src="assets/images/social-3.svg" alt=""></div>
-                        <div><img src="assets/images/social-4.svg" alt=""></div>
-                    </div>
-                </div>
-                <div class="hidden mt-2 lg:max-w-sm md:block">
-                    <a href="/" aria-label="Go home" title="Company" class="inline-flex items-center">
-                        <img src="assets/images/footer-logo.svg" alt="">
-                    </a>
-                    <p class="text-sm text-white mt-5">
-                        Easy payment solutions for you <br /> and your customers.
-                    </p>
-                    <div class=" justify-center mt-5 md:justify-start">
-                        <div class="flex">
-                            <div class="mr-2"><img src="assets/images/email.svg" width="70%" alt=""></div>
-                            <div class="text-xs text-white">info@payfixy.com
-                            </div>
-                        </div>
-                        <div class="flex mt-2">
-                            <div class="mr-2"><img src="assets/images/phone.svg" width="70%" alt=""></div>
-                            <div class="text-xs text-white">+234 9032293077</div>
-                        </div>
-                        <div class="flex mt-2">
-                            <div class="mr-2"><img src="assets/images/time.svg" width="70%" alt=""></div>
-                            <div class="text-xs text-white">Call Lines are open 08:00 to <br> 17:00 WAT, Monday -
-                                Friday</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="hidden md:block md:flex mt-5">
-                    <img src="assets/images/logo-pci.png" class="mr-10" width="20%" alt="">
-                    <img src="assets/images/ngr.png" height="15%" width="50%" alt="">
-                </div>
-            </div>
-            <div
-                class="md:hidden flex justify-center pb-10 md:pb-0 text-center border-b md:border-none mt-2 text-white">
-                <div>
-                    <div class="mt-5">info@payfixy.com</div>
-                    <div class="mt-2">+234 9032293077</div>
-                    <div class="mt-5">
-                        Call Lines are open 08:00 to
-                    </div>
-                    <div class="mt-2">
-                        17:00 WAT, Monday - Friday
-                    </div>
-                </div>
-            </div>
-            <div
-                class="hidden md:block md:grid grid-cols-1 flex justify-between md:block gap-5 row-gap-8 md:col-span-3 md:grid-cols-3">               
-                <div>
-                    <p class="font-semibold tracking-wide text-white text-teal-accent-400">Product</p>
-                    <ul class="mt-2 space-y-5">
-                        <li class="mt-5">
-                            <a routerLink="payment" class="text-white text-sm">Payment Gateway</a>
-                        </li>
-                        <li class="mt-5">
-                            <a [routerLink]="['payX']" fragment="payXsection" class="block text-base text-white text-sm p-1 cursor-pointer">PayX</a>
-                        </li>
-                        <li class="mt-5">
-                            <a [routerLink]="['payment']" fragment="tranXact" class="block text-base text-white text-sm p-1 cursor-pointer">TraXact</a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <p class="font-semibold tracking-wide text-white text-teal-accent-400">Resources</p>
-                    <ul class="mt-2 space-y-5">
-                        <li class="mt-5">
-                            <a href="pricing" class="text-white text-sm">Pricing</a>
-                        </li>
-                        <li class="mt-5">
-                            <a href="about-us" class="text-white text-sm">About Us</a>
-                        </li>
-                        <li class="mt-5">
-                            <a href="contact-us" class="text-white text-sm">Contact Us</a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <p class="font-semibold tracking-wide text-white text-teal-accent-400">
-                        Get Help
-                    </p>
-                    <ul class="mt-2 space-y-5">
-                        <li class="mt-5">
-                            <a href="/" class="text-white text-sm">FAQs</a>
-                        </li>
-                        <li class="mt-5">
-                            <a href="/" class="text-white text-sm">Security</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div id="features"  class="flex pt-10 md:pt-0 border-b md:border-none pb-10 md:pb-0 md:hidden">
-                <div>
-                    <div class="mt-5 cursor-pointer" routerLink="payment">Payment</div>
-                    <div class="mt-5 cursor-pointer" routerLink="payment">Payment Gateway</div>
-                    <div class="mt-5 cursor-pointer">
-                        <a [routerLink]="['payX']" fragment="payXsection" class="block text-base text-white text-sm p-1 cursor-pointer">PayX</a>
-                    </div>
-                    <div class="mt-5 cursor-pointer">
-                        <a [routerLink]="['payment']" fragment="tranXact" class="block text-base text-white text-sm p-1 cursor-pointer">TraXact</a>
-                    </div>
-                </div>
-                <div>
-                    <div class="mt-5 cursor-pointer" routerLink="pricing">Pricing</div>
-                    <div class="mt-5 cursor-pointer" routerLink="about-us">
-                        About Us
-                    </div>
-                    <div class="mt-5 cursor-pointer" routerLink="contact-us">
-                        Contact Us
-                    </div>
-                </div>
-            </div>
-
-            <div id="features" class="flex border-b p-5 md:p-0 md:border-none md:hidden pb-5 md:pb-0 md:hidden">
-                <div>
-                    <div class="mt-2 cursor-pointer">Get Help</div>
-                </div>
-                <div>
-                    <div class="mt-2 cursor-pointer">FAQs</div>
-                </div>
-                <div>
-                    <div class="mt-2 cursor-pointer">Security</div>
-                </div>
-            </div>
-        </div>
-        <div class="md:hidden flex text-center pb-5 md:pb-0 border-b md:border-none text-white justify-center">
+  <div class="container pt-12 mx-auto">
+    <div class="grid md:gap-16 row-gap-10 mb-8 lg:grid-cols-5">
+      <div
+        class="flex justify-center border-b md:border-none pb-5 md:block md:max-w-md lg:col-span-2"
+      >
+        <div class="block md:hidden">
+          <a
+            href="/"
+            aria-label="Go home"
+            title="Company"
+            class="inline-flex items-center"
+          >
+            <img src="assets/images/footer-logo.svg" alt="" />
+          </a>
+          <div class="flex items-center text-center text-white mt-5">
             <div>
-                <div class="mt-5">Privacy Policy</div>
-                <div class="mt-5">Terms of Use</div>
-                <div class="mt-5">Cookie Policy</div>
-                <div class="mt-5">Merchant Service Agreement</div>
-                <div class="mt-5">Payment protection promise</div>
+              Easy payment solutions for you<br />
+              and your customers
             </div>
-        </div>
-
-        <div class="md:hidden flex text-center pt-5 pb-5 md:pb-0 md:pt-0 text-white justify-center">
-            <div>
-                <div class="flex">
-                    <div><img width="50%" src="assets/images/naija-logo.svg" alt=""></div>
-                    <div class="text-white flex text-sm mt-1">Nigeria <span class="ml-2 mt-1"><img
-                    src="assets/images/drop-arrow.png" width="80%" alt=""></span></div>
-                </div>
+          </div>
+          <div class="flex justify-center mt-2 text-center">
+            <div class="mr-1">
+              <img src="assets/images/social-1.svg" alt="" />
             </div>
-        </div>
-
-        <div class="md:hidden flex text-center border-t md:border-none pt-5 md:pt-0 text-white justify-center">
-            <div>
-                <div>
-                    <div class="flex justify-center mt-5">
-                        <img src="assets/images/logo-pci.png" class="mr-10" width="15%" alt="">
-                        <img src="assets/images/ngr.png" height="15%" width="35%" alt="">
-                    </div>
-                </div>
-                <div>
-                    <p class="text-lg my-10 text-white">
-                        © Payfixy
-                    </p>
-                </div>
+            <div class="mr-1">
+              <img src="assets/images/social-2.svg" alt="" />
             </div>
+            <div class="mr-1">
+              <img src="assets/images/social-3.svg" alt="" />
+            </div>
+            <div><img src="assets/images/social-4.svg" alt="" /></div>
+          </div>
         </div>
-
-        <div
-            class="hidden md:flex px-6 md:px-0 flex-row justify-between pt-5 pb-3 border-b border-t border-deep-purple-accent-200 sm:flex-row">
+        <div class="hidden mt-2 lg:max-w-sm md:block">
+          <a
+            href="/"
+            aria-label="Go home"
+            title="Company"
+            class="inline-flex items-center"
+          >
+            <img src="assets/images/footer-logo.svg" alt="" />
+          </a>
+          <p class="text-sm text-white mt-5">
+            Easy payment solutions for you <br />
+            and your customers.
+          </p>
+          <div class="justify-center mt-5 md:justify-start">
             <div class="flex">
-                <div><img width="50%" src="assets/images/naija-logo.svg" alt=""></div>
-                <div class="text-white flex text-sm mt-1">Nigeria <span class="ml-2 mt-1"><img
-                            src="assets/images/drop-arrow.png" width="80%" alt=""></span></div>
+              <div class="mr-2">
+                <img src="assets/images/email.svg" width="70%" alt="" />
+              </div>
+              <div class="text-xs text-white">info@payfixy.com</div>
             </div>
-            <!-- <p class="text-sm text-white"> -->
-            <ul class="flex flex-col space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
-                <li>
-                    <a href="/" class="text-sm text-white">Twitter</a>
-                </li>
-                <li>
-                    <a href="/" class="text-sm text-white">Facebook</a>
-                </li>
-                <li>
-                    <a href="/" class="text-sm text-white">Instagram</a>
-                </li>
-                <li>
-                    <a href="/" class="text-sm text-white">Youtube</a>
-                </li>
-                <li>
-                    <a href="/" class="text-sm text-white">Linkedln</a>
-                </li>
-            </ul>
-        </div>
-        <div class="hidden md:flex px-6 md:px-0 flex-row justify-between pt-5 sm:flex-row">
-            <div class="flex">
-                <p class="text-sm text-white">
-                    © Payfixy
-                </p>
+            <div class="flex mt-2">
+              <div class="mr-2">
+                <img src="assets/images/phone.svg" width="70%" alt="" />
+              </div>
+              <div class="text-xs text-white">+234 9032293077</div>
             </div>
-            <p class="text-sm text-white">
-            <ul class="flex flex-col space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
-                <li>
-                    <a href="/" class="text-sm text-white">Privacy Policy</a>
-                </li>
-                <li>
-                    <a href="/" class="text-sm text-white">Terms of Use</a>
-                </li>
-                <li>
-                    <a href="/" class="text-sm text-white">Cookie Policy</a>
-                </li>
-                <li>
-                    <a href="/" class="text-sm text-white">Merchant Service Agreement</a>
-                </li>
-                <li>
-                    <a href="/" class="text-sm text-white">Payment protection promise</a>
-                </li>
-            </ul>
+            <div class="flex mt-2">
+              <div class="mr-2">
+                <img src="assets/images/time.svg" width="70%" alt="" />
+              </div>
+              <div class="text-xs text-white">
+                Call Lines are open 08:00 to <br />
+                17:00 WAT, Monday - Friday
+              </div>
+            </div>
+          </div>
         </div>
+        <div class="hidden md:block md:flex mt-5">
+          <img
+            src="assets/images/logo-pci.png"
+            class="mr-10"
+            width="20%"
+            alt=""
+          />
+          <img src="assets/images/ngr.png" height="15%" width="50%" alt="" />
+        </div>
+      </div>
+      <div
+        class="md:hidden flex justify-center pb-10 md:pb-0 text-center border-b md:border-none mt-2 text-white"
+      >
+        <div>
+          <div class="mt-5">info@payfixy.com</div>
+          <div class="mt-2">+234 9032293077</div>
+          <div class="mt-5">Call Lines are open 08:00 to</div>
+          <div class="mt-2">17:00 WAT, Monday - Friday</div>
+        </div>
+      </div>
+      <div
+        class="hidden md:block md:grid grid-cols-1 flex justify-between md:block gap-5 row-gap-8 md:col-span-3 md:grid-cols-3"
+      >
+        <div>
+          <p
+            class="font-semibold tracking-wide text-white text-teal-accent-400 font-sanMedium"
+          >
+            Product
+          </p>
+          <ul class="mt-2 space-y-5">
+            <li class="mt-5">
+              <a routerLink="payment" class="text-white text-sm"
+                >Payment Gateway</a
+              >
+            </li>
+            <li class="mt-5">
+              <a
+                [routerLink]="['payX']"
+                fragment="payXsection"
+                class="block text-base text-white text-sm p-1 cursor-pointer"
+                >PayX</a
+              >
+            </li>
+            <li class="mt-5">
+              <a
+                [routerLink]="['payment']"
+                fragment="tranXact"
+                class="block text-base text-white text-sm p-1 cursor-pointer"
+                >TraXact</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <p
+            class="font-semibold tracking-wide text-white text-teal-accent-400 font-sanMedium"
+          >
+            Resources
+          </p>
+          <ul class="mt-2 space-y-5">
+            <li class="mt-5">
+              <a href="pricing" class="text-white text-sm">Pricing</a>
+            </li>
+            <li class="mt-5">
+              <a href="about-us" class="text-white text-sm">About Us</a>
+            </li>
+            <li class="mt-5">
+              <a href="contact-us" class="text-white text-sm">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <p
+            class="font-semibold tracking-wide text-white text-teal-accent-400 font-sanMedium"
+          >
+            Get Help
+          </p>
+          <ul class="mt-2 space-y-5">
+            <li class="mt-5">
+              <a href="/" class="text-white text-sm">FAQs</a>
+            </li>
+            <li class="mt-5">
+              <a href="/" class="text-white text-sm">Security</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div
+        id="features"
+        class="flex pt-10 md:pt-0 border-b md:border-none pb-10 md:pb-0 md:hidden"
+      >
+        <div>
+          <div class="mt-5 cursor-pointer" routerLink="payment">Payment</div>
+          <div class="mt-5 cursor-pointer" routerLink="payment">
+            Payment Gateway
+          </div>
+          <div class="mt-5 cursor-pointer">
+            <a
+              [routerLink]="['payX']"
+              fragment="payXsection"
+              class="block text-base text-white text-sm p-1 cursor-pointer"
+              >PayX</a
+            >
+          </div>
+          <div class="mt-5 cursor-pointer">
+            <a
+              [routerLink]="['payment']"
+              fragment="tranXact"
+              class="block text-base text-white text-sm p-1 cursor-pointer"
+              >TraXact</a
+            >
+          </div>
+        </div>
+        <div>
+          <div class="mt-5 cursor-pointer" routerLink="pricing">Pricing</div>
+          <div class="mt-5 cursor-pointer" routerLink="about-us">About Us</div>
+          <div class="mt-5 cursor-pointer" routerLink="contact-us">
+            Contact Us
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="features"
+        class="flex border-b p-5 md:p-0 md:border-none md:hidden pb-5 md:pb-0 md:hidden"
+      >
+        <div>
+          <div class="mt-2 cursor-pointer">Get Help</div>
+        </div>
+        <div>
+          <div class="mt-2 cursor-pointer">FAQs</div>
+        </div>
+        <div>
+          <div class="mt-2 cursor-pointer">Security</div>
+        </div>
+      </div>
     </div>
+    <div
+      class="md:hidden flex text-center pb-5 md:pb-0 border-b md:border-none text-white justify-center"
+    >
+      <div>
+        <div class="mt-5">Privacy Policy</div>
+        <div class="mt-5">Terms of Use</div>
+        <div class="mt-5">Cookie Policy</div>
+        <div class="mt-5">Merchant Service Agreement</div>
+        <div class="mt-5">Payment protection promise</div>
+      </div>
+    </div>
+
+    <div
+      class="md:hidden flex text-center pt-5 pb-5 md:pb-0 md:pt-0 text-white justify-center"
+    >
+      <div>
+        <div class="flex">
+          <div>
+            <img width="50%" src="assets/images/naija-logo.svg" alt="" />
+          </div>
+          <div class="text-white flex text-sm mt-1">
+            Nigeria
+            <span class="ml-2 mt-1"
+              ><img src="assets/images/drop-arrow.png" width="80%" alt=""
+            /></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="md:hidden flex text-center border-t md:border-none pt-5 md:pt-0 text-white justify-center"
+    >
+      <div>
+        <div>
+          <div class="flex justify-center mt-5">
+            <img
+              src="assets/images/logo-pci.png"
+              class="mr-10"
+              width="15%"
+              alt=""
+            />
+            <img src="assets/images/ngr.png" height="15%" width="35%" alt="" />
+          </div>
+        </div>
+        <div>
+          <p class="text-lg my-10 text-white">© Payfixy</p>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="hidden md:flex px-6 md:px-0 flex-row justify-between pt-5 pb-3 border-b border-t border-deep-purple-accent-200 sm:flex-row"
+    >
+      <div class="flex">
+        <div><img width="50%" src="assets/images/naija-logo.svg" alt="" /></div>
+        <div class="text-white flex text-sm mt-1">
+          Nigeria
+          <span class="ml-2 mt-1"
+            ><img src="assets/images/drop-arrow.png" width="80%" alt=""
+          /></span>
+        </div>
+      </div>
+      <!-- <p class="text-sm text-white"> -->
+      <ul
+        class="flex flex-col space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row"
+      >
+        <li>
+          <a href="/" class="text-sm text-white">Twitter</a>
+        </li>
+        <li>
+          <a href="/" class="text-sm text-white">Facebook</a>
+        </li>
+        <li>
+          <a href="/" class="text-sm text-white">Instagram</a>
+        </li>
+        <li>
+          <a href="/" class="text-sm text-white">Youtube</a>
+        </li>
+        <li>
+          <a href="/" class="text-sm text-white">Linkedln</a>
+        </li>
+      </ul>
+    </div>
+    <div
+      class="hidden md:flex px-6 md:px-0 flex-row justify-between pt-5 sm:flex-row"
+    >
+      <div class="flex">
+        <p class="text-sm text-white">© Payfixy</p>
+      </div>
+      <p class="text-sm text-white"></p>
+      <ul
+        class="flex flex-col space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row"
+      >
+        <li>
+          <a href="/" class="text-sm text-white">Privacy Policy</a>
+        </li>
+        <li>
+          <a href="/" class="text-sm text-white">Terms of Use</a>
+        </li>
+        <li>
+          <a href="/" class="text-sm text-white">Cookie Policy</a>
+        </li>
+        <li>
+          <a href="/" class="text-sm text-white">Merchant Service Agreement</a>
+        </li>
+        <li>
+          <a href="/" class="text-sm text-white">Payment protection promise</a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>

@@ -42,7 +42,10 @@ module.exports = {
         veryDarkBlue: 'hsl(233, 12%, 13%)',
         veryPalRed: 'hsl(13, 100%, 96%)',
         veryLightGray: 'hsl(0, 0%, 98%)',
-      }
+      },
+      fontFamily: {
+        sanMedium: ['Sans-Neue-Medium'],
+      },
     },
   },
   plugins: [],

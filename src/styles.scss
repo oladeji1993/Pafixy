@@ -9,6 +9,11 @@
     src: url(assets/Sans-Neue-Font/SoinSansNeue-Light.otf)  format("opentype");
 }
 
+@font-face {
+    font-family: Sans-Neue-Medium;
+    src: url(assets/Sans-Neue-Font/SoinSansNeue-Medium.otf)  format("opentype");
+}
+
 html, body { height: 100%; }
 body { margin: 0; font-family: Sans-Neue }
 
@@ -40,26 +45,26 @@ body { margin: 0; font-family: Sans-Neue }
     @apply mx-auto;
     @apply px-5;
   }
-  
+
   @media (min-width: 640px) {
     .container {
       max-width: 640px;
     }
   }
-  
+
   @media (min-width: 768px) {
     .container {
       max-width: 768px;
     }
   }
-  
+
   @media (min-width: 1024px) {
     .container {
       max-width: 1024px;
     //   padding:0px 20px
     }
   }
-  
+
   @media (min-width: 1280px) {
     .container {
       max-width: 1280px;
