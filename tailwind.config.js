@@ -1,6 +1,23 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   mode: 'jit',
+  // container: {
+  //   center: true,
+  //   screens: {
+  //     sm: '640px',
+  //     md: '768px',
+  //     lg: '1024px',
+  //     xl: '1408px',
+  //     '2xl': '1408px',
+  //   },
+  //   padding: {
+  //     DEFAULT: '1rem',
+  //     sm: '2rem',
+  //     lg: '2rem',
+  //     xl: '0rem',
+  //     '2xl': '0rem',
+  //   },
+  // },
   variants: {
     // display:['group-hover']
   },
