@@ -1,4 +1,4 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 
 @Component({
@@ -6,9 +6,16 @@ import { Component, HostListener } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent  {
+export class AppComponent implements OnInit  {
   navbarFixed: boolean = false
   title = 'Pafixy | Home';
+
+
+  constructor() { }
+
+  ngOnInit() {
+ 
+  }
 
   @HostListener('window:scroll', ['$event']) onScroll(){
     if(window.scrollY > 0){

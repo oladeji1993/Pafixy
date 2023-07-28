@@ -1,0 +1,19 @@
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-open {
+    overflow: hidden !important;
+  }
+
+  .fixed {
+    z-index: 999; 
+  }
+  
+  .bg-opacity-50 {
+    backdrop-filter: blur(4px); 
+  }
+  
+  .max-w-sm {
+    max-width: 40rem; 
+  }
