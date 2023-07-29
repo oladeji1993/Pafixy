@@ -28,27 +28,38 @@ export class CookieBannerComponent implements OnInit {
     if (hasAcceptedCookies === 'true' || hasAcceptedCookies === 'false') {
       this.showBanner = false;
     }
+    // this.renderer.addClass(document.body, 'overflow-hidden');
   }
+
+
+
+  ngOnDestroy() {
+    this.renderer.removeClass(document.body, 'overflow-hidden');
+  }
+
 
   acceptCookies() {
     this.cookieService.set('acceptCookies', 'true', 365);
+    this.showBanner = false;
+    this.showModal = false 
+
   }
 
   declineCookies() {
     this.cookieService.set('acceptCookies', 'false', 365);
+    this.showBanner = false
+    this.showModal = false 
+
   }
 
   toggleModal() {
     this.showModal = !this.showModal;
     if (this.showModal) {
-      this.renderer.setStyle(document.body, 'overflow', 'hidden');
+      this.renderer.addClass(document.body, 'overflow-hidden');
     } else {
-      this.renderer.removeStyle(document.body, 'overflow');
+      this.renderer.removeClass(document.body, 'overflow-hidden');
     }
   }
 
-  ngOnDestroy() {
-    this.renderer.removeStyle(document.body, 'overflow');
-  }
 
 }
