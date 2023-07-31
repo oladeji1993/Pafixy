@@ -1,0 +1,29 @@
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+  .fixed {
+    z-index: 999; 
+  }
+
+  .overflow-hidden {
+    overflow: hidden;
+  }
+  
+  .bg-opacity-50 {
+    backdrop-filter: blur(4px); 
+  }
+  
+  .modal-content {
+    max-height: 60vh; 
+
+  }
+
+  .modal-body{
+    overflow: scroll !important;
+
+  }
+  
+  .max-w-sm {
+    max-width: 30rem; 
+  }

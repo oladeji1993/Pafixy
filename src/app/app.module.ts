@@ -15,6 +15,7 @@ import { HeaderComponent } from './Pages/shared/header/header.component';
 import { FooterComponent } from './Pages/shared/footer/footer.component';
 import { NzMenuModule } from 'ng-zorro-antd/menu';
 import { NzStepsModule } from 'ng-zorro-antd/steps';
+import { CookieBannerComponent } from './Pages/cookie-banner/cookie-banner.component';
 
 
 
@@ -31,7 +32,8 @@ import { NzStepsModule } from 'ng-zorro-antd/steps';
     LandingComponent,
     AboutUsComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    CookieBannerComponent,
   ],
   imports: [
     NzMenuModule,
